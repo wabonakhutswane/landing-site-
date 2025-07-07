@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Digital Product</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 20px; }
+    .container { max-width: 600px; background: #fff; margin: auto; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    h1 { color: #333; }
+    p { font-size: 16px; color: #555; }
+    .price { font-size: 24px; color: #e63946; margin: 20px 0; }
+
+button { background: #1d3557; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #457b9d; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ultimate Guide to [Your Niche]</h1>
+    <p>Get the step-by-step digital guide that helps you solve [problem]. Includes practical tips, exercises, and bonus worksheets to boost your skills fast!</p>
+    <p class="price">Only $27</p>
+    
+    <!-- PayPal Buy Now Button -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_xclick" />
+      <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com" />
+      <input type="hidden" name="item_name" value="Ultimate Guide to [Your Niche]" />
+      <input type="hidden" name="amount" value="27.00" />
+      <input type="hidden" name="currency_code" value="USD" />
+      <button type="submit">Buy Now with PayPal</button>
+    </form>
+  </div>
+</body>
+</html>
